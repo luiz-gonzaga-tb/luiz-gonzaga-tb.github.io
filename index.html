@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luiz Gonzaga - O Rei do Baião</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,41 +13,89 @@
   <p>O Rei do Baião</p>
 </header>
 
-<section class="hero">
-  <img src="images/gonzaga1.jpg" alt="Luiz Gonzaga">
+<!-- HERO -->
+<section class="hero fade-in">
+  <img src="images/gonzaga1.jpg">
 </section>
 
-<section>
+<!-- HISTÓRIA -->
+<section class="fade-in">
   <h2>História</h2>
   <p>
-    Luiz Gonzaga nasceu em 1912, em Exu, Pernambuco. Foi um dos maiores
-    responsáveis por levar a música nordestina para todo o Brasil.
+    Luiz Gonzaga nasceu em 1912, em Pernambuco, e se tornou um dos maiores nomes da música brasileira.
   </p>
   <p>
-    Com sua sanfona, chapéu de couro e estilo único, popularizou o baião,
-    o xote e o forró, tornando-se um ícone da cultura brasileira.
+    Ele popularizou o baião, o xote e o forró, levando a cultura nordestina para todo o país.
   </p>
 </section>
 
-<section>
+<!-- LINHA DO TEMPO -->
+<section class="timeline fade-in">
+  <h2>Linha do Tempo</h2>
+
+  <div class="timeline-item">
+    <span>1912</span>
+    <p>Nascimento em Exu (PE)</p>
+  </div>
+
+  <div class="timeline-item">
+    <span>1940</span>
+    <p>Início da carreira musical</p>
+  </div>
+
+  <div class="timeline-item">
+    <span>1947</span>
+    <p>Lançamento de "Asa Branca"</p>
+  </div>
+
+  <div class="timeline-item">
+    <span>1989</span>
+    <p>Falecimento</p>
+  </div>
+</section>
+
+<!-- CURIOSIDADES -->
+<section class="fade-in">
   <h2>Curiosidades</h2>
   <ul>
-    <li>Seu apelido era "Rei do Baião".</li>
-    <li>Gravou clássicos como "Asa Branca".</li>
-    <li>Influenciou gerações de músicos brasileiros.</li>
-    <li>Também era militar antes da fama.</li>
+    <li>Era conhecido como "Rei do Baião"</li>
+    <li>Usava chapéu de couro típico do sertão</li>
+    <li>Foi militar antes da fama</li>
+    <li>Influenciou gerações de músicos</li>
   </ul>
 </section>
 
-<section class="gallery">
+<!-- GALERIA -->
+<section class="gallery fade-in">
   <h2>Galeria</h2>
-  <img src="images/gonzaga2.jpg" alt="Luiz Gonzaga 2">
-  <img src="images/gonzaga3.jpg" alt="Luiz Gonzaga 3">
+  <img src="images/gonzaga2.jpg">
+  <img src="images/gonzaga3.jpg">
+</section>
+
+<!-- VÍDEO -->
+<section class="video fade-in">
+  <h2>Vídeo</h2>
+  <iframe width="100%" height="400"
+    src="https://www.youtube.com/embed/yM4XKDYFl8M"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</section>
+
+<!-- MÚSICA -->
+<section class="music fade-in">
+  <h2>Ouça um clássico</h2>
+  <audio controls>
+    <source src="audio/asa-branca.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
 </section>
 
 <footer>
   <p>Site criado por João Batista </p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
