@@ -1,58 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luiz Gonzaga - O Rei do Baião</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiz Gonzaga</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Luiz Gonzaga</h1>
+        <nav>
+            <ul>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#musicas">Músicas</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#linha-do-tempo">Linha do Tempo</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-  <div class="logo">Luiz Gonzaga</div>
-  <ul>
-    <li><a href="#historia">História</a></li>
-    <li><a href="#musicas">Músicas</a></li>
-    <li><a href="#curiosidades">Curiosidades</a></li>
-    <li><a href="#timeline">Linha do Tempo</a></li>
-    <li><a href="#galeria">Galeria</a></li>
-    <li><a href="#video">Vídeo</a></li>
-    <li><a href="#mapa">Mapa</a></li>
-  </ul>
-</nav>
+    <main>
+        <section id="historia">
+            <h2>História</h2>
+            <p>Luiz Gonzaga, conhecido como o "Rei do Baião", foi um músico, compositor e sanfoneiro brasileiro que popularizou ritmos nordestinos como o baião, xote e forró pelo Brasil.</p>
+        </section>
 
-<header class="hero fade-in">
-  <img src="images/gonzaga1.jpg" alt="Luiz Gonzaga">
-  <div class="hero-text">
-    <h1>Luiz Gonzaga</h1>
-    <p>O Rei do Baião</p>
-  </div>
-</header>
+        <section id="musicas">
+            <h2>Músicas</h2>
+            <ul>
+                <li>Asa Branca</li>
+                <li>O Xote das Meninas</li>
+                <li>Que Nem Jiló</li>
+                <li>Não Deixe o Samba Morrer</li>
+            </ul>
+        </section>
 
-<section id="historia" class="fade-in">
-  <h2>História</h2>
-  <p>Luiz Gonzaga do Nascimento nasceu em 13 de dezembro de 1912, em Exu, Pernambuco.</p>
-</section>
+        <section id="curiosidades">
+            <h2>Curiosidades</h2>
+            <ul>
+                <li>Luiz Gonzaga nasceu em Exu, Pernambuco, em 1912.</li>
+                <li>Seu instrumento principal era a sanfona.</li>
+                <li>Recebeu o título de "Patrimônio Vivo da Música Brasileira".</li>
+            </ul>
+        </section>
 
-<section id="musicas" class="fade-in">
-  <h2>Músicas Famosas</h2>
-  <ul>
-    <li>Asa Branca <button onclick="playAudio('asaBranca')">▶️ Ouvir</button></li>
-  </ul>
-  <audio id="asaBranca" src="audio/asa_branca.mp3"></audio>
-</section>
+        <section id="linha-do-tempo">
+            <h2>Linha do Tempo</h2>
+            <ul>
+                <li>1912 - Nascimento em Exu, PE</li>
+                <li>1941 - Primeira gravação em São Paulo</li>
+                <li>1947 - Lançamento de "Asa Branca"</li>
+                <li>1989 - Morte em Recife, PE</li>
+            </ul>
+        </section>
 
-<section id="curiosidades" class="fade-in">
-  <h2>Curiosidades</h2>
-  <ul>
-    <li>Era conhecido como "Rei do Baião"</li>
-  </ul>
-</section>
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <img src="images/gonzaga1.jpg" alt="Foto principal de Luiz Gonzaga">
+                <img src="images/gonzaga2.jpg" alt="Capa do álbum Asa Branca">
+                <img src="images/gonzaga3.jpg" alt="Luiz Gonzaga no palco">
+            </div>
+        </section>
 
-<footer>
-  <p>Site criado por João Batista</p>
-</footer>
+        <section id="video">
+            <h2>Vídeo</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1Q7cJ2xLnWc" title="Vídeo Luiz Gonzaga" frameborder="0" allowfullscreen></iframe>
+        </section>
 
-<script src="script.js"></script>
+        <section id="mapa">
+            <h2>Mapa</h2>
+            <p>Local de nascimento: Exu, Pernambuco</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.823664905014!2d-37.125!3d7.679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1e43f04f76a9%3A0x79f1aa3b6a5c4a!2sExu%2C%20PE%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1699999999999" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026, The Fuscar Organization.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
