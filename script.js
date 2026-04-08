@@ -1,4 +1,18 @@
-* { margin:0; padding:0; box-sizing:border-box; }
+// FADE IN
+const elements = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    const screen = window.innerHeight;
+    if(position < screen-100){ el.classList.add('show'); }
+  });
+});
+
+// ÁUDIO
+function playAudio(id){
+  const audio = document.getElementById(id);
+  if(audio){ audio.currentTime=0; audio.play(); }
+}* { margin:0; padding:0; box-sizing:border-box; }
 
 body {
   font-family: 'Arial', sans-serif;
