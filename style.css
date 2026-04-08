@@ -69,34 +69,4 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
-
-/* hamburguer */
-/* Esconde botão no desktop */
-.menu-toggle {
-    display: none;
-    font-size: 28px;
-    background: none;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-/* Menu escondido no mobile inicialmente */
-@media screen and (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-        display: none; /* escondido */
-        background-color: #333;
-        padding: 10px;
-        border-radius: 5px;
-    }
-
-    .menu-toggle {
-        display: block; /* mostra o botão */
-    }
-
-    nav.active ul {
-        display: flex; /* mostra o menu quando ativo */
-    }
 }
