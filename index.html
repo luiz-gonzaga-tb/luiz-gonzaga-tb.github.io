@@ -8,72 +8,87 @@
 </head>
 <body>
 
-<header>
-  <h1>Luiz Gonzaga</h1>
-  <p>O Rei do Baião</p>
+<!-- MENU -->
+<nav>
+  <div class="logo">Luiz Gonzaga</div>
+  <ul>
+    <li><a href="#historia">História</a></li>
+    <li><a href="#musicas">Músicas</a></li>
+    <li><a href="#curiosidades">Curiosidades</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="#video">Vídeo</a></li>
+    <li><a href="#mapa">Mapa</a></li>
+    <li><button id="darkModeBtn">🌙</button></li>
+  </ul>
+</nav>
+
+<header class="hero fade-in">
+  <img src="images/gonzaga1.jpg" alt="Luiz Gonzaga">
+  <div class="hero-text">
+    <h1>Luiz Gonzaga</h1>
+    <p>O Rei do Baião</p>
+  </div>
 </header>
 
-<!-- HERO -->
-<section class="hero fade-in">
-  <img src="images/gonzaga1.jpg">
-</section>
-
 <!-- HISTÓRIA -->
-<section class="fade-in">
+<section id="historia" class="fade-in">
   <h2>História</h2>
   <p>
-    Luiz Gonzaga nasceu em 1912, em Pernambuco, e se tornou um dos maiores nomes da música brasileira.
+    Luiz Gonzaga do Nascimento nasceu em 13 de dezembro de 1912, na cidade de Exu, Pernambuco. 
+    Filho de um sanfoneiro, teve contato com a música desde cedo, aprendendo a tocar sanfona ainda jovem.
   </p>
   <p>
-    Ele popularizou o baião, o xote e o forró, levando a cultura nordestina para todo o país.
+    Antes de se tornar famoso, Gonzaga serviu no Exército brasileiro, viajando por várias regiões do país 
+    e conhecendo diferentes estilos musicais.
+  </p>
+  <p>
+    Na década de 1940, iniciou sua carreira artística no Rio de Janeiro e começou a divulgar a música nordestina 
+    para todo o Brasil, tornando-se um dos artistas mais importantes da cultura brasileira.
   </p>
 </section>
 
-<!-- LINHA DO TEMPO -->
-<section class="timeline fade-in">
-  <h2>Linha do Tempo</h2>
-
-  <div class="timeline-item">
-    <span>1912</span>
-    <p>Nascimento em Exu (PE)</p>
-  </div>
-
-  <div class="timeline-item">
-    <span>1940</span>
-    <p>Início da carreira musical</p>
-  </div>
-
-  <div class="timeline-item">
-    <span>1947</span>
-    <p>Lançamento de "Asa Branca"</p>
-  </div>
-
-  <div class="timeline-item">
-    <span>1989</span>
-    <p>Falecimento</p>
-  </div>
+<!-- MÚSICAS -->
+<section id="musicas" class="fade-in">
+  <h2>Músicas Famosas</h2>
+  <ul>
+    <li>Asa Branca <button onclick="playAudio('asaBranca')">▶️ Ouvir</button></li>
+    <li>Baião <button onclick="playAudio('baiao')">▶️ Ouvir</button></li>
+    <li>Olha Pro Céu <button onclick="playAudio('olhaProCeu')">▶️ Ouvir</button></li>
+    <li>Xote das Meninas <button onclick="playAudio('xote')">▶️ Ouvir</button></li>
+  </ul>
+  <audio id="asaBranca" src="audio/asa_branca.mp3"></audio>
+  <audio id="baiao" src="audio/baiao.mp3"></audio>
+  <audio id="olhaProCeu" src="audio/olha_pro_ceu.mp3"></audio>
+  <audio id="xote" src="audio/xote_das_meninas.mp3"></audio>
 </section>
 
 <!-- CURIOSIDADES -->
-<section class="fade-in">
+<section id="curiosidades" class="fade-in">
   <h2>Curiosidades</h2>
   <ul>
     <li>Era conhecido como "Rei do Baião"</li>
     <li>Usava chapéu de couro típico do sertão</li>
     <li>Foi militar antes da fama</li>
     <li>Influenciou gerações de músicos</li>
+    <li>Seu figurino era inspirado nos cangaceiros, como Lampião</li>
   </ul>
 </section>
 
 <!-- GALERIA -->
-<section class="gallery fade-in">
+<section id="galeria" class="gallery fade-in">
   <h2>Galeria</h2>
-  <img src="images/gonzaga2.jpg">
-  <img src="images/gonzaga3.jpg">
+  <figure>
+    <img src="images/gonzaga2.jpg" alt="Luiz Gonzaga tocando sanfona">
+    <figcaption>Luiz Gonzaga com sua sanfona</figcaption>
+  </figure>
+  <figure>
+    <img src="images/gonzaga3.jpg" alt="Luiz Gonzaga no palco">
+    <figcaption>Apresentação ao vivo</figcaption>
+  </figure>
 </section>
 
 <!-- VÍDEO -->
-<section class="video fade-in">
+<section id="video" class="fade-in">
   <h2>Vídeo</h2>
   <iframe width="100%" height="400"
     src="https://www.youtube.com/embed/yM4XKDYFl8M"
@@ -82,11 +97,17 @@
   </iframe>
 </section>
 
+<!-- MAPA -->
+<section id="mapa" class="fade-in">
+  <h2>Mapa: Nascimento</h2>
+  <p>Luiz Gonzaga nasceu em Exu, Pernambuco.</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.249931813998!2d-38.41340348518004!3d7.998113694127572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab12db25e3787%3A0x3ef5643ec51c4b91!2sExu%2C%20Pernambuco%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1618397989652!5m2!1spt-BR!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
 <footer>
-  <p>Site criado por João Batista </p>
+  <p>Site criado por João Batista</p>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
