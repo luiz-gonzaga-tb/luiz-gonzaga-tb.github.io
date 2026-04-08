@@ -12,6 +12,110 @@ body {
     line-height: 1.6;
 }
 
+/* Header e menu */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Seções */
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 90%; /* responsivo */
+    background-color: #444;
+    border-radius: 8px;
+}
+
+h2 {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Galeria de imagens */
+.gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Vídeos e mapas */
+iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Media queries para telas pequenas */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+}/* Reset simples */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #555;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
 header {
     background-color: #333;
     padding: 20px;
