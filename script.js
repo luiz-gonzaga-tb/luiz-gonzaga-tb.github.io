@@ -10,3 +10,10 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+
+window.addEventListener("click", () => {
+  const audio = document.getElementById("player");
+  audio.muted = false;
+  audio.play();
+});
