@@ -6,15 +6,15 @@
 }
 
 body {
-    background-color: #555;
-    color: #fff;
+    background-color: #eee; /* antes #555 */
+    color: #000; /* antes #fff */
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
 /* Header e menu */
 header {
-    background-color: #333;
+    background-color: #ddd; /* antes #333 */
     padding: 20px;
     text-align: center;
 }
@@ -31,7 +31,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000; /* antes branco */
     text-decoration: none;
     font-weight: bold;
 }
@@ -40,13 +40,14 @@ nav ul li a {
 section {
     padding: 20px;
     margin: 10px auto;
-    max-width: 90%; /* responsivo */
-    background-color: #444;
+    max-width: 90%;
+    background-color: #fff; /* antes #444 */
     border-radius: 8px;
 }
 
 h2 {
-    background-color: #333;
+    background-color: #ddd; /* antes #333 */
+    color: #000;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
@@ -77,13 +78,14 @@ iframe {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #ddd; /* antes #333 */
+    color: #000;
     text-align: center;
     padding: 15px;
     margin-top: 20px;
 }
 
-/* Media queries para telas pequenas */
+/* Media queries */
 @media screen and (max-width: 600px) {
     nav ul {
         flex-direction: column;
@@ -102,74 +104,4 @@ footer {
     .gallery img {
         max-width: 100%;
     }
-}/* Reset simples */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #555;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-header {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 20px;
-    margin: 10px auto;
-    max-width: 800px;
-    background-color: #444;
-    border-radius: 8px;
-}
-
-h2 {
-    background-color: #333;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
-
-.gallery {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.gallery img {
-    width: 200px;
-    height: auto;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #333;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
 }
